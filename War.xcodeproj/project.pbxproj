@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D606C530257C3719007C3399 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = D606C52F257C3719007C3399 /* SocketIO */; };
+		D606C532257C3736007C3399 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606C531257C3736007C3399 /* SocketIOManager.swift */; };
+		D606C535257E6CB3007C3399 /* BlackOpsOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D606C533257E6B1D007C3399 /* BlackOpsOne-Regular.ttf */; };
+		D60E989A25793F0F00BF753F /* AllTheWayUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D60E989925793F0F00BF753F /* AllTheWayUp.mp3 */; };
 		D64AFA8125641CD6009FC505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64AFA8025641CD6009FC505 /* AppDelegate.swift */; };
 		D64AFA8325641CD6009FC505 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64AFA8225641CD6009FC505 /* SceneDelegate.swift */; };
 		D64AFA8525641CD7009FC505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64AFA8425641CD7009FC505 /* ViewController.swift */; };
 		D64AFA8825641CD7009FC505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64AFA8625641CD7009FC505 /* Main.storyboard */; };
 		D64AFA8A25641CDD009FC505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64AFA8925641CDD009FC505 /* Assets.xcassets */; };
 		D64AFA8D25641CDD009FC505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64AFA8B25641CDD009FC505 /* LaunchScreen.storyboard */; };
+		D652DD042576B0DB00DCDD34 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D652DD032576B0DB00DCDD34 /* Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D606C531257C3736007C3399 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		D606C533257E6B1D007C3399 /* BlackOpsOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlackOpsOne-Regular.ttf"; sourceTree = "<group>"; };
+		D60E98942579353600BF753F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D60E989925793F0F00BF753F /* AllTheWayUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AllTheWayUp.mp3; path = War/SoundsForWAR/AllTheWayUp.mp3; sourceTree = SOURCE_ROOT; };
 		D64AFA7D25641CD6009FC505 /* War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = War.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64AFA8025641CD6009FC505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D64AFA8225641CD6009FC505 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		D64AFA8925641CDD009FC505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D64AFA8C25641CDD009FC505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64AFA8E25641CDD009FC505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D652DD032576B0DB00DCDD34 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D606C530257C3719007C3399 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D606C534257E6BF8007C3399 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D606C533257E6B1D007C3399 /* BlackOpsOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D60E989825793ED900BF753F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D60E989925793F0F00BF753F /* AllTheWayUp.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		D64AFA7425641CD6009FC505 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +83,18 @@
 		D64AFA7F25641CD6009FC505 /* War */ = {
 			isa = PBXGroup;
 			children = (
+				D606C534257E6BF8007C3399 /* Fonts */,
+				D60E989825793ED900BF753F /* Sounds */,
 				D64AFA8025641CD6009FC505 /* AppDelegate.swift */,
 				D64AFA8225641CD6009FC505 /* SceneDelegate.swift */,
 				D64AFA8425641CD7009FC505 /* ViewController.swift */,
+				D606C531257C3736007C3399 /* SocketIOManager.swift */,
+				D652DD032576B0DB00DCDD34 /* Animations.swift */,
 				D64AFA8625641CD7009FC505 /* Main.storyboard */,
 				D64AFA8925641CDD009FC505 /* Assets.xcassets */,
 				D64AFA8B25641CDD009FC505 /* LaunchScreen.storyboard */,
 				D64AFA8E25641CDD009FC505 /* Info.plist */,
+				D60E98942579353600BF753F /* README.md */,
 			);
 			path = War;
 			sourceTree = "<group>";
@@ -83,6 +115,9 @@
 			dependencies = (
 			);
 			name = War;
+			packageProductDependencies = (
+				D606C52F257C3719007C3399 /* SocketIO */,
+			);
 			productName = War;
 			productReference = D64AFA7D25641CD6009FC505 /* War.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = D64AFA7425641CD6009FC505;
+			packageReferences = (
+				D606C52E257C3719007C3399 /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = D64AFA7E25641CD6009FC505 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +163,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D606C535257E6CB3007C3399 /* BlackOpsOne-Regular.ttf in Resources */,
 				D64AFA8D25641CDD009FC505 /* LaunchScreen.storyboard in Resources */,
 				D64AFA8A25641CDD009FC505 /* Assets.xcassets in Resources */,
 				D64AFA8825641CD7009FC505 /* Main.storyboard in Resources */,
+				D60E989A25793F0F00BF753F /* AllTheWayUp.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64AFA8525641CD7009FC505 /* ViewController.swift in Sources */,
+				D606C532257C3736007C3399 /* SocketIOManager.swift in Sources */,
 				D64AFA8125641CD6009FC505 /* AppDelegate.swift in Sources */,
+				D652DD042576B0DB00DCDD34 /* Animations.swift in Sources */,
 				D64AFA8325641CD6009FC505 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K446X267V;
 				INFOPLIST_FILE = War/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K446X267V;
 				INFOPLIST_FILE = War/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D606C52E257C3719007C3399 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D606C52F257C3719007C3399 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D606C52E257C3719007C3399 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D64AFA7525641CD6009FC505 /* Project object */;
 }
